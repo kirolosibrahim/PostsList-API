@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+
+        <EditText
+            android:id="@+id/AddPostDialog_userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:hint="User id"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/AddPostDialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddPostDialog_userid"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/AddPostDialog_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddPostDialog_title"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Body"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/AddPostDialog_body"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/purple_500"
+            android:elevation="20dp"
+            android:text="Done"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</layout>
+
